@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+h2 {
+  color: #000000;
+  clear: both;
+  margin: 0;
+  padding: 10px;
+}
+#wrap {
+  background-color: #DBEB3E;
+  min-height: 100%;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#wrap > div {
+  clear: both;
+}
+#popular, #recent {
+  overflow: auto;
+}
+.mediawrap {
+  width: 18%;
+  height: 250px;
+  float: left;
+  margin: 0.5%;
+  padding: 0.5%;
+  position: relative;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+.mediawrap .text {
+  margin: 0;
+  max-height: 165px;
+  font-size: 85%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#floatview {
+  margin: 50px auto 0 auto;
+}
+
+#floatview .media {
+  display: inherit;
+  margin: 2px auto 0 auto;
+  max-height: 400px;
+}
+
+#floatview .text {
+  margin-top: 5px;
+  font-size: 80%;
+}
+.mediainfo {
+  background-color: #FFFFFF;
+  width: 95%;
+  height: 70px;
+  position: absolute;
+  bottom: 5px;
+  color: #888888;
+  font-size: 70%;
+}
+.mediainfo p, #floatview p {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.mediainfo p.fav, #floatview p.fav {
+  padding-left: 10px;
+  font-size: 20%;
+}
+
+.mediainfo p.user, #floatview p.user {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+}
+
+.mediainfo p.suser, #floatview p.suser {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  font-size: 30%;
+}
+
+.mediainfo p.date {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 10px;
+  font-size: 20%;
+}
+
+.fdate {
+  text-overflow: ellipsis;
+  font-size: 20%;
+}
+
+img.userpic {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  background-color: #000000;
+  float: left;
+}
+#screen {
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#floatview {
+  padding: 10px;
+  background-color: #FFFFFF;
+  opacity: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  position: relative;
+}
+#close {
+  position: absolute;
+  top: -32px;
+  right: -32px;
+}
+
+#header, #footer {
+  width: 100%;
+  height: 1px;
+  background-color: #444444;
+  color: #FFFFFF;
+  clear: both;
+}
+#dummy {
+  float: left;
+  margin: 5px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  #wrap {
+    width: 100%;
+  }
+  .mediawrap {
+    width: 21%;
+    margin: 1%;
+    padding: 1%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mediawrap {
+    width: 29%;
+    margin: 1%;
+    padding: 1%;
+  }
+  .mediawrap .text {
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 90%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .mediawrap {
+    width: 46%;
+    height: 150px;
+    margin: 1%;
+    padding: 1%;
+  }
+  .mediawrap .text {
+    margin: 0;
+    max-height: 170px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 80%;
+  }
+  .mediawrap img, .mediawrap video {
+    width: 150px;
+  }
+  .mediainfo {
+    width: 150px;
+  }
+  .mediainfo img {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mediawrap {
+    height: 170px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+  }
+  .mediawrap .text {
+    margin: 0;
+    max-height: 90px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 70%;
+  }
+  #screen {
+    width: 100%;
+  }
+  #floatview {
+    margin: 2%;
+    width: 100%;
+  }
+  #floatview .media {
+    display: inherit;
+  }
+}
+@media screen and (max-height: 640px) {
+  #floatview .media {
+    max-height: 280px;
+  }
+}
+@media screen and (max-height: 480px) {
+  #floatview .media {
+    max-height: 240px;
+  }
+}
+@media screen and (max-height: 360px) {
+  #floatview .media {
+    max-height: 200px;
+  }
+}
+#more {
+  margin: 10px auto;
+  display: block;
+  width: 141px;
+  height: 50px;
+  font-size: large;
+}
